@@ -1,0 +1,162 @@
+/*
+
+Responsive Mobile Menu v1.0
+Plugin URI: responsivemobilemenu.com
+
+Author: Sergio Vitov
+Author URI: http://xmacros.com
+
+License: CC BY 3.0 http://creativecommons.org/licenses/by/3.0/
+
+*/
+
+.rmm {
+  display: block;
+  padding: 0px;
+  z-index: 50;
+  margin: 0 auto !important;
+  text-align: center;
+  line-height: 19px !important;
+  max-width: 960px !important;
+}
+.rmm * {
+	-webkit-tap-highlight-color:transparent !important;
+	font-family: 'Hammersmith One', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #3F3F3F;
+}
+.rmm a {
+	color: #3F3F3F;
+	text-decoration:none;
+}
+.rmm .rmm-main-list, .rmm .rmm-main-list li {
+	margin:0px;
+	padding:0px;
+}
+.rmm ul {
+	display:block;
+	width:auto !important;
+	margin:0 auto !important;
+	overflow:hidden;
+	list-style:none;
+}
+
+
+/* sublevel menu - in construction */
+.rmm ul li ul, .rmm ul li ul li, .rmm ul li ul li a {
+	display:none !important;
+	height:0px !important;
+	width:0px !important;
+}
+/* */
+
+
+.rmm .rmm-main-list li {
+	display:inline;
+	padding:padding:0px;
+	margin:0px !important;
+}
+.rmm-toggled {
+	display:none;
+	width:100%;
+	position:relative;
+	overflow:hidden;
+	margin:0 auto !important;
+}
+.rmm-button:hover {
+	cursor:pointer;
+}
+.rmm .rmm-toggled ul {
+  display: none;
+  margin: 0px !important;
+  padding: 0px !important;
+  background-color: ghostwhite;
+  z-index: 10000000000;
+ /* height: 320px !important;*/
+}
+
+.rmm .rmm-toggled ul li {
+	display:block;
+	margin:0 auto !important;
+}
+
+
+/* MINIMAL STYLE */
+
+.rmm.minimal a {
+	color: #3F3F3F;
+}
+.rmm.minimal a:hover {
+	opacity:0.7;
+}
+.rmm.minimal .rmm-main-list li a {
+	display:inline-block;
+	padding:8px 30px 8px 30px;
+	margin:0px -3px 0px -3px;
+	font-size:15px;
+}
+.rmm.minimal .rmm-toggled {
+  	width: 100%;
+	min-height:36px;
+}
+.rmm.minimal .rmm-toggled-controls {
+  display: block;
+  height: 36px;
+  color: #333333;
+  text-align: left;
+  position: relative;
+  margin-bottom: 10px;
+}
+.rmm.minimal .rmm-toggled-title {
+  position: relative;
+  top: 9px;
+  left: 9px;
+  font-size: 16px;
+  color: #33333;
+  display: none;
+}
+.rmm.minimal .rmm-button {
+	display:block;
+	position:absolute;
+	right:48.5%;
+	top:10px;
+}
+
+
+@media all and (max-width: 600px ) {
+
+	.rmm.minimal .rmm-button {
+	  display: block;
+	  position: absolute;
+	  left: 46.5%;
+	  top: 10px;
+	}
+
+}
+
+
+
+.rmm.minimal .rmm-button span {
+	display:block;
+	margin:4px 0px 4px 0px;
+	height:2px;
+	background:#333333;
+	width:25px;
+}
+.rmm.minimal .rmm-toggled ul li a {
+	display:block;
+	width:100%;
+	text-align:center;
+	padding:10px 0px 10px 0px;
+	border-bottom:1px solid #dedede;
+	color: #3F3F3F;
+}
+.rmm.minimal .rmm-toggled ul li:first-child a {
+	border-top:1px solid #dedede;
+}
+
+
+.rmm.minimal .rmm-toggled ul li:last-child a {
+  border-top: 0px solid #dedede !important;
+}
