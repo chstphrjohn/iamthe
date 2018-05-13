@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive');
 body {
   width: 100%;
-  margin: auto 0%;
+  margin: auto 0;
   font-family: 'Courier new', 'sans-serif';
   color: grey;
   font-size: 0.9em;
@@ -36,7 +36,7 @@ main {
 .sidebar {
   width: 124px;
   float: left;
-  margin: 0%;
+  margin: 0;
   position: fixed;
   min-height: 100%;
   font-size: 0.6em;
@@ -87,7 +87,7 @@ nav ul.nav {
   transform-origin: 0 50%;
   -webkit-transform: rotate(-90deg) translateX(-100%);
   transform: rotate(-90deg) translateX(-93%);
-  margin-bottom: 0px;
+  margin-bottom: 0;
   min-width: 375px;
   width: 100%;
   z-index: 1000000000;
